@@ -15,11 +15,10 @@ public class TestFiliere
     {
     Filiere fi1 = new Filiere();
     fi1.setNomFil("Programmation");
-    fi1.setModuleFil("Java / Python / Lunix");
     fi1.setDescription("c'est une filiere qui forme des etudiant dans le but de concevoir des logiciels...");
     
     
-    Filiere fi2 = new Filiere ("Réseaux Télécome","Reseaux / Maintenance / Windows Server","c'est une filiere qui forme des etudiant dans le but de regler les reseaux informatiques...");
+    Filiere fi2 = new Filiere ("Réseaux Télécome","c/'est une filiere qui forme des etudiant dans le but de regler les reseaux informatiques...");
     
      System.out.println(fi1);
      System.out.println("------*********--------");

@@ -24,6 +24,11 @@ public class Etudiant
     private String filiere;
     private String groupe;
     
+    public Etudiant ( )
+    {
+       
+        
+    }
     public Etudiant ( String prenom,String nom,String dateNaiss,String lieuNaiss,String matricule,String telephone,
      String adresse,String email,String nationalite,String dateInscp,String filiere,String groupe )
     {
@@ -41,21 +46,7 @@ public class Etudiant
         this.groupe = groupe;
         
     }
-    
-   public Etudiant ( String prenom,String nom,String dateNaiss,String lieuNaiss,String matricule,String telephone,
-   String nationalite,String dateInscp,String filiere,String groupe )
-    {
-        this.prenom = prenom;
-        this.nom = nom;
-        this.dateNaiss = dateNaiss;
-        this.lieuNaiss = lieuNaiss;
-        this.matricule = matricule;
-        this.telephone = telephone;
-        this.nationalite = nationalite;
-        this.dateInscp = dateInscp;
-        this.filiere = filiere;
-        this.groupe = groupe;
-    }
+
 
     public String getPrenom() {
         return prenom;

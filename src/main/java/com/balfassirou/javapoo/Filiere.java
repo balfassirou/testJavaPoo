@@ -11,35 +11,25 @@ package com.balfassirou.javapoo;
  */
 public class Filiere 
 {
-    private String nomFil;
-    private String moduleFil;
+    private String nomFiliere;
     private String description;
     
     public Filiere ()
     { 
      
     }
-    public Filiere (String nomFil, String moduleFil, String description)
+    public Filiere (String nomFiliere, String description)
     { /*constructeur avec parametre*/
-        this.nomFil= nomFil;
-        this.moduleFil = moduleFil;
+        this.nomFiliere= nomFiliere;
         this.description = description;
     }
 
     public String getNomFil() {
-        return nomFil;
+        return nomFiliere;
     }
 
     public void setNomFil(String nomFil) {
-        this.nomFil = nomFil;
-    }
-
-    public String getModuleFil() {
-        return moduleFil;
-    }
-
-    public void setModuleFil(String moduleFil) {
-        this.moduleFil = moduleFil;
+        this.nomFiliere = nomFil;
     }
 
     public String getDescription() {
@@ -52,7 +42,7 @@ public class Filiere
 
     @Override
     public String toString() {
-        return "Nom du Filiere: " + nomFil + "\nModule des Filires: " + moduleFil + "\nDescription: " + description;
+        return "Nom du Filiere: " + nomFiliere +  "\nDescription: " + description;
     }
     
 }

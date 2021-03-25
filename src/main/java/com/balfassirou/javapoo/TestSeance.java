@@ -15,7 +15,7 @@ public static void main(String args[])
     {
 
     
-    Seance s1 = new Seance ("15 jancier 2021","Analyse de donée","9 h : 00 mns","11 h : 00 mns,",20,18);
+    Seance s1 = new Seance ("15 jancier 2021","Analyse de donée","Pr310","M. DATH","9 h : 00 mns","11 h : 00 mns,",20,18);
     
      System.out.println(s1);
     

@@ -13,15 +13,19 @@ public class Seance
 {
     private String dateSeance;
     private String seanceModule;
+    private String seanceGroupe;
+    private String profSeance;
     private String heureDebut;
     private String heureFin;
     private int volumHoraire;
     private int soldeHeure;
     
-    public Seance (String dateSeance, String seanceModule, String heureDebut, String heureFin,int volumHoraire, int soldeHeure )
+    public Seance (String dateSeance, String seanceModule,String seanceGroupe,String profSeance, String heureDebut, String heureFin,int volumHoraire, int soldeHeure )
     {
     this.dateSeance = dateSeance;
     this.seanceModule = seanceModule;
+    this.seanceGroupe = seanceGroupe;
+    this.profSeance = profSeance;
     this.heureDebut = heureDebut;
     this.heureFin = heureFin;
     this.volumHoraire = volumHoraire;
@@ -41,6 +45,20 @@ public class Seance
     }
 
     public void setSeanceModule(String seanceModule) {
+        this.seanceModule = seanceModule;
+    }
+      public String getSeanceGroupe() {
+        return seanceModule;
+    }
+
+    public void setSeanceGroupe(String seanceModule) {
+        this.seanceModule = seanceModule;
+    }
+      public String getProfSeance() {
+        return seanceModule;
+    }
+
+    public void setProfSeance(String seanceModule) {
         this.seanceModule = seanceModule;
     }
 
@@ -80,7 +98,7 @@ public class Seance
 
     @Override
     public String toString() {
-        return "Date de seance: " + dateSeance + "\nSeance de Module: " + seanceModule + "\nHeure de Debut: " + heureDebut + "\nHeure de Fin: " + heureFin + " \nVolume Horaire: " +volumHoraire+ " \nSolde Heure: " + soldeHeure;
+        return "Date de seance: " + dateSeance + "\nModule du seance: " + seanceModule + "\nGroupe du seance: " + seanceGroupe + "\nProf du seance: " + profSeance + "\nHeure de Debut: " + heureDebut + "\nHeure de Fin: " + heureFin + " \nVolume Horaire: " +volumHoraire+ " \nSolde Heure: " + soldeHeure;
     }
     
  

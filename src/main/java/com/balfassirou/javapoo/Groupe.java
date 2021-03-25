@@ -13,7 +13,8 @@ public class Groupe
 {
     private String nomGroupe;
     private String dateCreation;
-    private int nombreEtudiant;
+   private int nombreEtudiant;
+    //private int nombreEtudiant[ ] = new int[30];
     
     public Groupe ()
     { 
