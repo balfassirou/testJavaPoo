@@ -13,7 +13,7 @@ public class FicheNote
 {
     private int numFiche;
     private String dateFiche;
-    private String module;
+    private String module; //prof , salle, groupe
     
     public FicheNote ()
     { 

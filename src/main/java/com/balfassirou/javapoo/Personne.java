@@ -17,25 +17,31 @@ public class Personne
     private int age;
     private String telephone;
     private String email;
+    private static int nombreObjetCree = 0;
+    private final String PAYS = "Sénégal";
+    private final double TAUXTVA = 18.5;
+    
     
     public Personne () 
     { /*constructeur sans parametre*/
-    
+         Personne.nombreObjetCree++;
+    }
+    public Personne (String prenom, String nom)
+    { /*constructeur avec parametre*/
+        this.prenom = prenom;
+        this.nom = nom; 
+        Personne.nombreObjetCree++;
     }
     public Personne (String prenom, String nom, int age, String tel, String adresse, String email)
     { /*constructeur avec parametre*/
-        this.prenom = prenom;
+        this(prenom, nom); // appel du constructeur precedent avec les deux paramtres
+       // this.prenom = prenom;
         this.nom = nom;
         this.age = age;
         this.telephone = tel;
         this.adresse = adresse;
         this.email = email;
-    }
-    public Personne (String prenom, String nom)
-    { /*constructeur avec parametre*/
-        this.prenom = prenom;
-        this.nom = nom;
-        
+        Personne.nombreObjetCree++;
     }
     
     public String getPrenom() {
@@ -92,9 +98,20 @@ public class Personne
     {
         return ("prénom:" + prenom + "\n Nom:" + nom + "\n Age:" + age + "\n Téléphone:" + telephone + "\n Adresse:" + adresse);
     }*/
-
+    public static int getnombreObjetCree()
+    {
+        return Personne.nombreObjetCree;
+    }
+    public String getPays()
+    {
+        return this.PAYS;
+    }
+    public double getTauxTva()
+    {
+        return this.TAUXTVA;
+    }
     @Override
     public String toString() {
-        return "prenom=" + prenom + ", \nNom=" + nom + ", \nAdresse=" + adresse + ", \nAge=" + age + ", \nTelephone=" + telephone + ", \nEmail=" + email + ')';
+        return "prenom: " + prenom + ", \nNom: " + nom + ", \nAdresse: " + adresse + ", \nAge: " + age + ", \nTelephone: " + telephone + ", \nEmail: " + email;
     }
 }

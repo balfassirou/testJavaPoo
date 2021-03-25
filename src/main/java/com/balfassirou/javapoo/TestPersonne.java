@@ -17,11 +17,11 @@ public class TestPersonne {
         p1.setPrenom("Fatu");
         p1.setNom("CEESAY");
         p1.setAge(30);
-        p1.setTelephone("220 995 93 65");
+        p1.setTelephone("+220 995 93 65");
         p1.setAdresse("Sifo");
         
         
-        Personne p2 = new Personne("Mariama", "CEESAY", 20, "220 459 88 59", "Yundum","mariamajokong@gmail.com");
+        Personne p2 = new Personne("Mariama", "CEESAY", 20, "+220 459 88 59", "Yundum","mariamajokong@gmail.com");
         
         Personne p3 = new Personne("Basiru", "CEESAY");
         
@@ -31,6 +31,8 @@ public class TestPersonne {
         System.out.println(p2); 
         System.out.println("********************************");
         System.out.println(p3); 
+        System.out.println("********************************");
+        System.out.println(Personne.getnombreObjetCree()); 
             
         
     }
