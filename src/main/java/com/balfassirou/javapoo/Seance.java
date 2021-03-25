@@ -51,14 +51,14 @@ public class Seance
         return seanceModule;
     }
 
-    public void setSeanceGroupe(String seanceModule) {
+    public void setSeanceGroupe(String SeanceGroupe) {
         this.seanceModule = seanceModule;
     }
       public String getProfSeance() {
         return seanceModule;
     }
 
-    public void setProfSeance(String seanceModule) {
+    public void setProfSeance(String ProfSeance) { 
         this.seanceModule = seanceModule;
     }
 
