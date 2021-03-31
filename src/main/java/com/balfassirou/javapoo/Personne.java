@@ -92,12 +92,11 @@ public class Personne
         this.email = email;
     }
     
-    
-    
    /* public String afficher()
     {
         return ("prénom:" + prenom + "\n Nom:" + nom + "\n Age:" + age + "\n Téléphone:" + telephone + "\n Adresse:" + adresse);
     }*/
+    
     public static int getnombreObjetCree()
     {
         return Personne.nombreObjetCree;
